@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+.about_bg {
+	position: relative;
+	background: #e0cda7;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	overflow: hidden;
+}
+.interview_bg {
+	background-image: url("../img/original/onstage2.png");
+	background-position: 0% 75%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%; 
+	padding: 0;
+	overflow: hidden;
+}
+#babble {
+	position: relative;
+	font-family: Palatino,"Palatino Linotype";
+	font-size: 3rem;
+	color: #444444;
+	margin-top: 100px;
+//	min-width: 600px;
+//	width: 600px;
+}
+#babble td {
+	//opacity: 0;
+} /*
+#babble td:nth-child(1) {
+	animation: popup 2s 1s ease-in-out forwards;
+}
+#babble td:nth-child(2) {
+	animation: popup 1s 3s ease-in-out forwards;
+}
+#babble td:nth-child(3) {
+	animation: popup 1s 4s ease-in-out forwards;
+}
+#babble td:nth-child(4) {
+	animation: popup 1s 5s ease-in-out forwards;
+} */
+#well,
+#dot1,
+#dot2,
+#dot3 {
+	display: none;
+}
+@keyframes popup {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+@media (min-width: 768px) {
+	#babble {
+		margin-top: -100px;
+	}
+}
+/* Wide content */
+#go_prev {
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	z-index: 2;
+	opacity: 0;
+}
+#go_prev svg {
+	stroke: #ffffff;
+	width: 40px;
+	height: 40px;
+}
+#go_next {
+	position: absolute;
+	right: 0;
+	bottom: 50%;
+	z-index: 2;
+}
+#go_next svg {
+	stroke: #ffffff;
+	width: 30px;
+	height: 40px;
+	z-index: 2;
+}
+#go_next svg:hover,
+#go_prev svg:hover {
+	stroke: yellow;
+	cursor: url("../img/cursor4.png") 12 12, auto;
+}
+.flex_container {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+.flex_item {
+	width: 100%;
+	height: 100%;
+	flex: 0 0 auto;
+	padding: 0;
+	z-index: 1;
+}
+.inside_flex_item {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 100px 20px 10px;
+}
+.flex_item_margin {
+	margin: 100px 20px 10px;
+}
+.interview {
+	font-family: Palatino,"Palatino Linotype";
+	font-size: 1.8rem;
+	color: #444444;
+}
+@media (min-width: 768px) {
+	.flex_item {
+		width: 50%;
+		height: 100%;
+		padding: 0;
+		//padding: 13% 10% 5%;
+	}
+	.inside_flex_item {
+		margin: 26% 20% 5%;
+	}
+	.flex_item_margin {
+		margin: 26% 10% 5%;
+	}
+	#go_prev {
+		margin-left: 20px;
+	}
+	#go_next {
+		margin-right: 20px;
+	}
+}

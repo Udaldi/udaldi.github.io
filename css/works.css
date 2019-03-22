@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.work_bg {
+	position: relative;
+	background: #00712f; //#2a344f; //
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	overflow: hidden;
+}
+@media (min-width: 768px) {
+
+}

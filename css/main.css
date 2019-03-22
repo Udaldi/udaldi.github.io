@@ -16,36 +16,6 @@
 	padding: 0;
 	overflow: hidden;
 }
-.about_bg {
-	position: relative;
-	background: #e0cda7;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	overflow: hidden;
-}
-.work_bg {
-	position: relative;
-	background: #00712f; //#2a344f; //
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	overflow: hidden;
-}
-.life_bg {
-	position: relative;
-	background: #555f69;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	overflow: hidden;
-}
 header {
 	position: absolute;
 	top: 50%;
@@ -54,6 +24,7 @@ header {
 .name_bg {
 	position: absolute;
 	background-image: url("../img/original/about02.png");
+	//background-image: url("../img/original/about_typing.png");
 	background-position: 50% 0%;
 	background-repeat: no-repeat;
 	background-size: auto 200%;
@@ -62,45 +33,7 @@ header {
 	width: 100%;
 	height: 100%; 
 	padding: 0;
-	//animation: initlocation 2s 1s ease-in-out forwards;
 	overflow: hidden;
-}
-.interview_bg {
-	background-image: url("../img/original/onstage2.png");
-	background-position: 0% 75%;
-	background-repeat: no-repeat;
-	background-size: contain;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	height: 100%; 
-	padding: 0;
-	overflow: hidden;
-}
-#babble {
-	font-family: Palatino,"Palatino Linotype";
-	font-size: 3rem;
-	color: #444444;
-	margin-top: 100px;
-}
-#babble td {
-	opacity: 0;
-}
-#babble td:nth-child(1) {
-	animation: popup 2s 1s ease-in-out forwards;
-}
-#babble td:nth-child(2) {
-	animation: popup 1s 3s ease-in-out forwards;
-}
-#babble td:nth-child(3) {
-	animation: popup 1s 4s ease-in-out forwards;
-}
-#babble td:nth-child(4) {
-	animation: popup 1s 5s ease-in-out forwards;
-}
-@keyframes popup {
-	0% { opacity: 0;}
-	100% { opacity: 1;}
 }
 /* Responsive Design */
 @media (max-width: 767px) {
@@ -110,9 +43,6 @@ header {
 	.name_bg {
 		animation: initlocation 2s 1s ease-in-out forwards;
 		overflow: hidden;
-	}
-	#babble {
-		margin-top: -100px;
 	}
 }
 @keyframes initlocation { 
@@ -125,7 +55,7 @@ header {
 		background-position: 100% 0%;
 	}
 }
-.introduction {
+.contentSpace {
 	position: absolute;
 	margin-top: 100px;
 	margin-left: 20px;
@@ -133,7 +63,7 @@ header {
 	float: left;
 }
 @media (min-width: 768px) {
-	.introduction {
+	.contentSpace {
 		position: absolute;
 		margin-top: 13%;
 		margin-left: 10%;
@@ -170,14 +100,6 @@ header {
 	animation-delay: 3s;
 	animation-fill-mode: forwards;
 }
-/* Navigation symbols color */
-#xs_nav_label svg,
-#xs_navbar svg,
-.pagetop svg,
-#xs_navbar svg {
-	stroke: yellow;
-}
-
 /* The typing effect */
 @keyframes typing {
 	from { width: 0; opacity: 1;}
@@ -189,3 +111,10 @@ header {
 	50% { border-color: transparent; }
 }
 
+/* Navigation symbols color */
+#xs_nav_label svg,
+#xs_navbar svg,
+.pagetop svg,
+#xs_navbar svg {
+	stroke: yellow;
+}
