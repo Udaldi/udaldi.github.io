@@ -10,6 +10,9 @@
 		<link rel="stylesheet" href="./css/gridsystem.css">
 		<link rel="stylesheet" href="./css/common.css">
 		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="./css/about.css">
+		<link rel="stylesheet" href="./css/works.css">
+		<link rel="stylesheet" href="./css/contact.css">
 	</head>
 
 	<body>
@@ -27,7 +30,7 @@
 								<ul>
 									<li><a href="#about">About</a></li>
 									<li><a href="#works">Works</a></li>
-									<li><a href="#life">Life</a></li>
+									<li><a href="#contact">Contact</a></li>
 								</ul>
 							</div><!-- xs_navbar -->
 						</div><!-- xs_layout -->
@@ -36,7 +39,7 @@
 								<li><br /><br /><br /></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#works">Works</a></li>
-								<li><a href="#life">Life</a></li>
+								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</div><!-- md_layout -->
 					</nav>
@@ -44,7 +47,7 @@
 					<!-- PRELUDIO -->
 					<div id="top" class="setAnchor"></div>
 					<div class="img-responsive name_bg"></div>
-					<div class="introduction">
+					<div class="contentSpace">
 						<div class="chapterName">Hello<br />World<br /><br /></div>
 						<div class="typewriter white_text">
 							<p>Hi everyone. This is Udaldi.</p>
@@ -68,10 +71,10 @@
 									<table id="babble" border="0" cellspacing="0" cellpadding="0" width="100%" >
 										<tbody align="right">
 											<tr>
-												<td width="50%">Well</td>
-												<td width="5%">.</td>
-												<td width="5%">.</td>
-												<td width="5%">.</td>
+												<td width="50%"><span id="well">Well</span></td>
+												<td width="5%"><span id="dot1">.</span></td>
+												<td width="5%"><span id="dot2">.</span></td>
+												<td width="5%"><span id="dot3">.</span></td>
 												<td width="35%"> </td> <!-- dummy -->
 											</tr>
 										</tbody>
@@ -145,14 +148,26 @@
 					<div class="img-responsive name_bg"></div>
 					
 				</div><!--top_bg-->
-				<div id="goDown"><a href="#life"><svg><use xlink:href="#godown"></use></svg></a></div>
+				<div id="goDown"><a href="#contact"><svg><use xlink:href="#godown"></use></svg></a></div>
 			</div><!--top_frame-->
 			
-			<!-- LIFE -->
+			<!-- CONTACT -->
 			<div class="top_frame">
-				<div id="life" class="setAnchor"></div>
-				<div class="life_bg">
+				<div id="contact" class="setAnchor"></div>
+				<div class="contact_bg">
 					<div class="img-responsive name_bg"></div>
+					<div class="contentSpace">
+						<div class="chapterName">Contact<br /><br /></div>
+						<form class="contact_form" action="contact.php" method="post">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="remitente" placeholder="Udaldi, The Crow">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" placeholder="email@mailserver.com">
+							<label for="inquery">Have your say</label>
+							<textarea id="inquery" name="inquery"></textarea>
+							<button type="submit">Submit</button>
+						</form>
+					</div>
 				</div><!--top_bg-->
 			</div><!--top_frame-->
 			
