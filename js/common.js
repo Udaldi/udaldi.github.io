@@ -1,8 +1,8 @@
 // Global variables:
-var current= 1;
-var total= 4;
-var max_width_xs= 767;
-var fadingMs= 100;
+var current=1;
+var total=4;
+var max_width_xs=767;
+var fadingMs=100;
 // var well=document.getElementById('well');
 var well=$("#well");
 var dot1=$("#dot1");
@@ -71,10 +71,14 @@ document.querySelectorAll('.link').forEach((elem) => {
 	elem.addEventListener('click', handleClickLink);
 });
 
+document.getElementById('go_prev').addEventListener('touchstart', go_prev);
 document.getElementById('go_prev').addEventListener('click', go_prev);
+
+document.getElementById('go_next').addEventListener('touchstart', go_next);
 document.getElementById('go_next').addEventListener('click', go_next);
 
 function go_next(event) {
+	event.preventDefault();
 	if ($(window).width() <= max_width_xs) { // Case xs
 		inc=1;
 	}
@@ -98,6 +102,7 @@ function go_next(event) {
 }
 
 function go_prev(event) {
+	event.preventDefault();
 	if ($(window).width() <= max_width_xs) { // Case xs
 		inc=1;
 	}
