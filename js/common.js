@@ -39,7 +39,7 @@ $(document).ready(function() {
 	
 	//thinking();
 })
-
+/*
 function thinking() {
 
 	well.fadeIn(2000, function() { 
@@ -124,3 +124,4 @@ function go_prev(event) {
 		document.getElementById('go_prev').style.opacity=0;
 	}
 }
+*/
