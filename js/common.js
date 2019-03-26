@@ -1,5 +1,8 @@
 // Global variables:
 var current=1;
+var next=1;
+var inc=0;
+var jump="";
 var total=4;
 var max_width_xs=767;
 var fadingMs=100;
