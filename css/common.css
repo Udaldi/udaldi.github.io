@@ -110,7 +110,6 @@ nav {
 	width: 40px;
 	height: 40px;
 }
-
 /* Body under nav */
 .content {
 	position: relative;
@@ -122,11 +121,24 @@ nav {
 	margin: 2rem;
 	top: 100px;
 }
+.contentSpace {
+	padding: 100px 20px 0px;
+	height: 100%;
+}
+@media (min-width: 768px) {
+	.contentSpace {
+		padding-top: 13%;
+		padding-left: 10%;
+		width: 90%;
+		height: 80%;
+		text-align: left;
+		float: left;
+	}
+}
 .setAnchor {
   position: relative;
-//  top: -62px;
+ // top: -62px;
 }
-
 #goDown {
 	position: relative;
 	width: 20%;
@@ -197,6 +209,9 @@ nav {
 	font-family: helvetica;
 	font-size: 5.8rem;
 	line-height: 4rem;
+}
+.readable {
+	text-shadow: #000000 0px 0 5px;
 }
 @media (min-width: 768px) {
 	.chapterName {

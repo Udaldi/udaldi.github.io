@@ -55,23 +55,14 @@ header {
 		background-position: 100% 0%;
 	}
 }
-.contentSpace {
-	padding: 100px 20px 0px;
-	height: 100%;
-}
-@media (min-width: 768px) {
-	.contentSpace {
-		position: absolute;
-		margin-top: 13%;
-		margin-left: 10%;
-		width: 50%;
-		height: 100%;
-		text-align: left;
-		float: left;
-	}
-}
+
 /* typewriter effect */
-.typewriter p{
+.typewriter {
+	max-width: 35rem;
+	width: 35rem;
+}
+.typewriter .p1,
+.typewriter .p2 {
 	position: relative;
 	overflow: hidden;
 	border-right: .10em solid transparent;
@@ -80,17 +71,18 @@ header {
 	letter-spacing: .10em;
 	font-family: courier new, courier;
 	font-size: 1.8rem;
-	max-width: 33ch;
 	float: left;
 }
-.typewriter p:nth-child(1) {
+.typewriter .p1 {
+	display: block;
 	animation: 
 		typing 2.5s steps(28, end),
 		blink-caret .5s step-end 4;
 	animation-delay: 0;
 }
-.typewriter p:nth-child(2) {
+.typewriter .p2 {
 	opacity: 0;
+	display: block;
 	animation: 
 		typing 2.5s steps(28, end),
 		blink-caret .75s step-end infinite;
