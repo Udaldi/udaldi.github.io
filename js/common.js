@@ -7,11 +7,11 @@ var well=$("#well");
 var dot1=$("#dot1");
 var dot2=$("#dot2");
 var dot3=$("#dot3");
+var pagetop = $('.pagetop');
 
 $(document).ready(function() {
-	var pagetop = $('.pagetop');
-	
-	$(window).scroll(function () {
+		
+/*	$(window).scroll(function () {
 		if ($(this).scrollTop() > 100) {
 			pagetop.fadeIn();
 		} 
@@ -19,7 +19,7 @@ $(document).ready(function() {
 			pagetop.fadeOut();
 		}
 	});
-	
+	*/
 	$(function() {
 	    $("img").on('contextmenu', function(e) {
 	        return false;
@@ -37,7 +37,7 @@ $(document).ready(function() {
 		});
 	});
 	
-	thinking();
+	//thinking();
 })
 
 function thinking() {
