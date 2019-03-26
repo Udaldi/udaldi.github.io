@@ -56,11 +56,8 @@ header {
 	}
 }
 .contentSpace {
-	position: absolute;
-	margin-top: 100px;
-	margin-left: 20px;
-	text-align: left;
-	float: left;
+	padding: 100px 20px 0px;
+	height: 100%;
 }
 @media (min-width: 768px) {
 	.contentSpace {
