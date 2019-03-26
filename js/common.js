@@ -40,9 +40,9 @@ $(document).ready(function() {
 		});
 	});
 	
-	//thinking();
+	thinking();
 })
-/*
+
 function thinking() {
 
 	well.fadeIn(2000, function() { 
@@ -62,7 +62,7 @@ function desaparecer() {
 	dot3.fadeOut(2000, thinking);
 }
 
-*/
+
 document.getElementById('go_prev').addEventListener('touchstart', go_prev);
 document.getElementById('go_prev').addEventListener('click', go_prev);
 
