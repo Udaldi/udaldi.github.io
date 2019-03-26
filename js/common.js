@@ -3,7 +3,6 @@ var current=1;
 var total=4;
 var max_width_xs=767;
 var fadingMs=100;
-// var well=document.getElementById('well');
 var well=$("#well");
 var dot1=$("#dot1");
 var dot2=$("#dot2");
@@ -11,8 +10,6 @@ var dot3=$("#dot3");
 
 $(document).ready(function() {
 	var pagetop = $('.pagetop');
-	
-	thinking();
 	
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 100) {
@@ -40,7 +37,7 @@ $(document).ready(function() {
 		});
 	});
 	
-	
+	thinking();
 })
 
 function thinking() {
