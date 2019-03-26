@@ -59,15 +59,7 @@ function desaparecer() {
 	dot3.fadeOut(2000, thinking);
 }
 
-function handleClickLink(event) {
-	const block = event.currentTarget.dataset.block;
-	document.getElementById(block).scrollIntoView({ behavior: 'smooth'});
-}
-
-document.querySelectorAll('.link').forEach((elem) => {
-	elem.addEventListener('click', handleClickLink);
-});
-
+*/
 document.getElementById('go_prev').addEventListener('touchstart', go_prev);
 document.getElementById('go_prev').addEventListener('click', go_prev);
 
@@ -124,4 +116,4 @@ function go_prev(event) {
 		document.getElementById('go_prev').style.opacity=0;
 	}
 }
-*/
+
