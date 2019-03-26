@@ -11,7 +11,7 @@ var pagetop = $('.pagetop');
 
 $(document).ready(function() {
 		
-/*	$(window).scroll(function () {
+	$(window).scroll(function () {
 		if ($(this).scrollTop() > 100) {
 			pagetop.fadeIn();
 		} 
@@ -19,7 +19,7 @@ $(document).ready(function() {
 			pagetop.fadeOut();
 		}
 	});
-	*/
+	
 	$(function() {
 	    $("img").on('contextmenu', function(e) {
 	        return false;
