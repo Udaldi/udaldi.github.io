@@ -11,6 +11,10 @@ var dot1=$("#dot1");
 var dot2=$("#dot2");
 var dot3=$("#dot3");
 var pagetop = $('.pagetop');
+var workBG =$("#work_bg");
+var w_index=0;
+var w_total=3;
+var workList = ['./img/worksBG.jpg', './img/cityview01.gif', './img/original/singing01.png'];
 
 $(document).ready(function() {
 		
@@ -41,6 +45,7 @@ $(document).ready(function() {
 	});
 	
 	thinking();
+	alternateWorks();
 })
 
 function thinking() {
@@ -120,3 +125,16 @@ function go_prev(event) {
 	}
 }
 
+function alternateWorks() {
+	w_index = w_index + 1;
+	
+	if(w_index >= w_total) {
+		w_index = 0;
+	}
+	
+	document.getElementById('work_bg').style.backgroundImage = "url(" + workList[w_index] +  ")";
+	
+	setTimeout(function(){ 
+		alternateWorks();
+	}, 10000);
+}
