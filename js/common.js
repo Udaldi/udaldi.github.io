@@ -14,7 +14,7 @@ var pagetop = $('.pagetop');
 var workBG =$("#work_bg");
 var w_index=0;
 var w_total=3;
-var workList = ['./img/worksBG.jpg', './img/cityview01.gif', './img/original/singing01.png'];
+var workList = ['./img/worksBG.jpg', './img/workBG03.jpg', './img/workBG04.jpg'];
 
 $(document).ready(function() {
 		
@@ -54,8 +54,8 @@ function thinking() {
 		dot1.fadeIn(1000, function() {
 			dot2.fadeIn(1000, function() {
 				dot3.fadeIn(1000, desaparecer);
-			});
-		});
+			})
+		});;
 	});
 }
 
