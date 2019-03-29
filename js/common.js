@@ -14,7 +14,7 @@ var pagetop = $('.pagetop');
 var workBG =$("#work_bg");
 var w_index=0;
 var w_total=3;
-var workList = ['./img/worksBG.jpg', './img/workBG03.jpg', './img/workBG04.jpg'];
+var workList = ['./img/worksBG.jpg', './img/workBG03.png', './img/workBG04.png'];
 
 $(document).ready(function() {
 		
