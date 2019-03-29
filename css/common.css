@@ -55,6 +55,11 @@ nav {
 #navbar > li:hover {
 	color: yellow;
 }
+#navbar > li svg {
+	fill: transparent;
+	width: 40px;
+	height: 40px;
+}
 #xs_nav_label {
 	cursor: url("../img/cursor4.png") 12 12, auto;
 }
@@ -91,19 +96,21 @@ nav {
 	width: 100%;
 	height: 100%;
 	min-height: 500px;
-	background: rgba(255,255,255,.9);
-	z-index: 2;
+	background: rgba(55,55,55,.9);
+	z-index: 10;
 }
 #xs_navbar ul {
 	list-style-type: none;
-	font-size: 1.4rem;
+	font-size: 2rem;
 	margin-top: 3rem;
+	color: #ffffff;
+	font-weight: bold;
 }
 #xs_navbar li {
 	margin-top: 3rem;
 }
 #xs_navbar a:hover {
-	font-weight: bold;
+	color: yellow;
 }
 #xs_navbar svg {
 	fill: transparent;
@@ -276,4 +283,12 @@ footer {
 	.md_layout {
 		display: block;
 	}
+}
+/* Navigation symbols color */
+#navbar > li svg,
+#xs_nav_label svg,
+#xs_navbar svg,
+.pagetop svg,
+#xs_navbar svg {
+	stroke: yellow;
 }

@@ -53,3 +53,34 @@
 @media (min-width: 768px) {
 
 }
+/* workTypewriter effect */
+.workTypewriter {
+	max-width: 35rem;
+	width: 35rem;
+}
+.workTypewriter #captureText {
+	position: relative;
+	overflow: hidden;
+	border-right: .10em solid transparent;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .10em;
+	font-family: courier new, courier;
+	font-size: 1.2rem;
+	float: left;
+	display: block;
+	animation: 
+		typing 2.5s steps(28, end),
+		blink-caret .5s step-end 4;
+	animation-delay: 0;
+}
+/* The typing effect */
+@keyframes typing {
+	from { width: 0; opacity: 1;}
+	to { width: 100%; opacity: 1;}
+}
+/* The workTypewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: yellow; }
+	50% { border-color: transparent; }
+}
