@@ -4,7 +4,7 @@
 	background-image: url("../img/worksBG.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
