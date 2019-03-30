@@ -84,18 +84,4 @@
 }
 .workTypewriter #captureText.type {
 	width: 35rem;;
-	/*animation:
-		typing 2.5s; 
-		//typing 2.5s steps(28),
-		//blink-caret .5s step-end 4;*/
-}
-/* The typing effect */
-@keyframes typing {
-	0% { width: 0;}
-	100% { width: 100px;}
-}
-/* The workTypewriter cursor effect */
-@keyframes blink-caret {
-	from, to { border-color: yellow; }
-	50% { border-color: transparent; }
 }
