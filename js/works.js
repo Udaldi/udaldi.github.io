@@ -2,11 +2,11 @@
 
 var max_width_xs=767;
 var pagetop = $('.pagetop');
-var workBG =$("#work_bg");
+var workBG =$("#graphicNovel_bg");
 var w_index=0;
-var w_total=3;
-var workList = ['./img/worksBG.jpg', './img/workBG05.png', './img/workBG03.png'];
-var captureList = ["2003 -No title-","2007 -Corvus 2013-","2009 -Song for Uryes-"];
+var w_total=4;
+var workList = ['./img/workBG03.png', './img/workBG05.png', './img/workBG03.png', './img/workBG05.png'];
+var captureList = ["2003 -No title-","2007 -Corvus 2013-","2009 -Song for Uryes-","2007 -Corvus 2013-"];
 
 $(document).ready(function() {
 		
@@ -39,18 +39,27 @@ $(document).ready(function() {
 	alternateWorks();
 })
 
+function alternateWorks1() {
 
+	$('#captureText').toggleClass('type');
+	
+	setTimeout(function(){ 
+		alternateWorks();
+	}, 2800);
+}
 function alternateWorks() {
+	//document.getElementById('captureText').classList.remove("type");
 	w_index = w_index + 1;
 	
 	if(w_index >= w_total) {
 		w_index = 0;
 	}
 	
-	document.getElementById('work_bg').style.backgroundImage = "url(" + workList[w_index] +  ")";
+	document.getElementById('graphicNovel_bg').style.backgroundImage = "url(" + workList[w_index] +  ")";
 	document.getElementById('captureText').innerHTML = captureList[w_index];
+	$('#captureText').toggleClass('type');
 	
 	setTimeout(function(){ 
-		alternateWorks();
+		alternateWorks1();
 	}, 10000);
 }

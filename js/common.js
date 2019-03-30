@@ -11,10 +11,6 @@ var dot1=$("#dot1");
 var dot2=$("#dot2");
 var dot3=$("#dot3");
 var pagetop = $('.pagetop');
-var workBG =$("#work_bg");
-var w_index=0;
-var w_total=3;
-var workList = ['./img/worksBG.jpg', './img/workBG03.png', './img/workBG05.png'];
 
 $(document).ready(function() {
 		
@@ -45,7 +41,7 @@ $(document).ready(function() {
 	});
 	
 	thinking();
-	alternateWorks();
+	// alternateWorks();
 })
 
 function thinking() {
@@ -124,7 +120,7 @@ function go_prev(event) {
 		document.getElementById('go_prev').style.opacity=0;
 	}
 }
-
+/*
 function alternateWorks() {
 	w_index = w_index + 1;
 	
@@ -137,4 +133,4 @@ function alternateWorks() {
 	setTimeout(function(){ 
 		alternateWorks();
 	}, 10000);
-}
+}*/
