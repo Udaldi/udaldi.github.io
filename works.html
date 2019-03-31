@@ -16,55 +16,62 @@
 	<body>
 		<div class="wrapper">
 			<div class="top_frame">
-				<div class="top_bg">
-					<nav>
-						<div class="xs_layout">
-							<input type="checkbox" class="naviCheck" checked="checked" id="xs_nav" style="display: none;" />
-							<label id="xs_nav_label" for="xs_nav">
-								<svg class="visible_checked"><use xlink:href="#menu"></use></svg>
-								<svg class="hidden_checked"><use xlink:href="#cross"></use></svg>
-							</label>
-							<div id="xs_navbar">
-								<ul>
-									<li><a href="index.html#works"><svg><use xlink:href="#goprev"></use></svg></a></li>
-									<li><a href="#graphicNovel">Graphic Novel</a></li>
-									<li><a href="#photography">Photography</a></li>
-								</ul>
-							</div><!-- xs_navbar -->
-						</div><!-- xs_layout -->
-						<div class="md_layout white_text">
-							<ul id="navbar">
+				<nav>
+					<div class="xs_layout">
+						<input type="checkbox" class="naviCheck" checked="checked" id="xs_nav" style="display: none;" />
+						<label id="xs_nav_label" for="xs_nav">
+							<svg class="visible_checked"><use xlink:href="#menu"></use></svg>
+							<svg class="hidden_checked"><use xlink:href="#cross"></use></svg>
+						</label>
+						<div id="xs_navbar">
+							<ul>
 								<li><a href="index.html#works"><svg><use xlink:href="#goprev"></use></svg></a></li>
 								<li><a href="#graphicNovel">Graphic Novel</a></li>
 								<li><a href="#photography">Photography</a></li>
 							</ul>
-						</div><!-- md_layout -->
-					</nav>
-					
-					<!-- PRELUDIO -->
-					<div id="top" class="setAnchor"></div>
-					<div class="contentSpace">
-						<div class="chapterName">Graphic<br />Novel<br /><br /></div>
-						<div id="graphicNovel_bg">
-							<div class="workTypewriter black_text">
-								<p id="captureText"></p>
-							</div>
+						</div><!-- xs_navbar -->
+					</div><!-- xs_layout -->
+					<div class="md_layout white_text">
+						<ul id="navbar">
+							<li><a href="index.html#works"><svg><use xlink:href="#goprev"></use></svg></a></li>
+							<li><a href="#graphicNovel">Graphic Novel</a></li>
+							<li><a href="#photography">Photography</a></li>
+						</ul>
+					</div><!-- md_layout -->
+				</nav>
+				
+				<div id="graphicNovel" class="setAnchor"></div>
+				<div class="contentSpace">
+					<div class="chapterName">Graphic<br />Novel<br /><br /></div>
+					<div id="graphicNovel_bg">
+						<div class="workTypewriter black_text">
+							<p id="captureText"></p>
 						</div>
 					</div>
 				</div><!--contentSpace-->
 			</div><!--top_frame-->
 			
-			
-			
+			<div id="photography" class="setAnchor"></div>
+			<div class="top_frame">
+				<div class="contentSpace">
+					<div class="chapterName rightAlign">Photo&emsp;<br />graphy<br /><br /></div>
+					<div class="workTypewriter black_text">
+						<div id="photo_bg"></div>
+						<p id="picCapText"></p>
+					</div>
+					<footer>
+				<p class="copyright gray_text">Copyright &copy; 2019 Udaldi. All Rights Reserved.</p>
+			</footer>
+				</div>
+				
+			</div>
+
 			<div class="pagetop">
 				<a href="#"><svg><use xlink:href="#pagetop"></use></svg></a>
 			</div>
-			
-			
-			<footer>
-				<p class="copyright gray_text">Copyright &copy; 2019 Udaldi. All Rights Reserved.</p>
-			</footer>
+						
 		</div><!--wrapper-->
+		
 		
 		<script type="text/javascript" src="./js/jquery.min.js"></script>
 		<script type="text/javascript" src="./js/works.js"></script>
