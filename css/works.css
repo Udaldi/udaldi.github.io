@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+.top_frame {
+	background: #ffffff;
+	height: 100%;
+	width: 100%;
+//	overflow: hidden;
+}
 #work_bg {
 	background-image: url("../img/worksBG.jpg");
 	background-position: center;
@@ -50,25 +56,45 @@
     opacity: 0;
   }
 }
-@media (min-width: 768px) {
-
-}
 
 /* WORKS.HTML */
 /* workTypewriter effect */
 #graphicNovel_bg {
-	background-image: url("../img/workBG03.png");
+	background-image: url("../img/corvus2013.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	height: 500px;
+	height: 300px;
 	padding: 0;
 	z-index: 1;
 }
-.workTypewriter #captureText {
+#photo_bg {
+	background-image: url("../img/worksBG.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 300px;
+	padding: 0;
+	z-index: 1;
+	display: inline-block;
+}
+@media (min-width: 768px) {
+	#graphicNovel_bg,
+	#photo_bg {
+		height: 500px;
+	}
+}
+.workTypewriter {
+	margin-bottom: 100px;
+}
+.workTypewriter #captureText,
+.workTypewriter #picCapText {
 	position: relative;
 	overflow: hidden;
 	border-right: .10em solid transparent;
@@ -82,6 +108,8 @@
 	-webkit-transition: all 2.8s linear 0s;
 	transition: all 2.8s linear 0s;
 }
-.workTypewriter #captureText.type {
+.workTypewriter #captureText.type,
+.workTypewriter #picCapText.type {
 	width: 35rem;;
 }
+

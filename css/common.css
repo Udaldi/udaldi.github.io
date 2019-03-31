@@ -16,6 +16,7 @@
 .orange_text {color: #e53300; }
 .cream_text {color: #e0cda7; }
 .green_text {color: #00712f; }
+.yellowBG {background-color: yellow;}
 
 /* header */
 html, body {
@@ -142,6 +143,10 @@ nav {
 		float: left;
 	}
 }
+.rightAlign {
+	text-align: right;
+	float: right;
+}
 .setAnchor {
   position: relative;
  // top: -62px;
@@ -250,7 +255,6 @@ nav {
 }
 /* footer */
 footer {
-	position: absolute;
 	background: #ffffff;
 	height: 100px;
 	width: 100%;
