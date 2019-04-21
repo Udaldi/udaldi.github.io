@@ -18,7 +18,6 @@
 	padding: 0;
 	z-index: 1;
 }
-
 .worksTblXS {
 	font-family: Helvetica, Arial;
 	font-size: 2rem;
@@ -84,10 +83,27 @@
 	z-index: 1;
 	display: inline-block;
 }
+.explicando {
+	position: relative;
+	font-family: Helvetica, Arial;
+	font-size: 1.5rem;
+	column-count: 1;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10rem;
+}
 @media (min-width: 768px) {
 	#graphicNovel_bg,
 	#photo_bg {
 		height: 500px;
+	}
+	.explicando {
+		column-count: 2;
+		width: 80%;
+		-webkit-column-gap: 4rem;
+		-moz-column-gap: 4rem;
+		column-gap: 4rem;
 	}
 }
 .workTypewriter {
