@@ -3,9 +3,9 @@
 var max_width_xs=767;
 var pagetop = $('.pagetop');
 var w_index=0;
-var w_total=4;
-var graphList = ['./img/song4uryes-3.png', './img/corvus2013.jpg', './img/corvus2013-2.jpg', './img/song4uryes.png'];
-var graphCapList = ["Song for Uryes -2019-", "Corvus2013 -2009-", "Corvus2013 -2009-", "Song for Uryes -2019-"];
+var w_total=5;
+var graphList = ['./img/song4uryes-3.png', './img/corvus2013.jpg', './img/corvus2013-2.jpg', './img/corvus2013-3.jpg', './img/song4uryes.png'];
+var graphCapList = ["Song for Uryes -2010-", "Corvus2013 -2009-", "Corvus2013 -2009-", "Corvus2013 -2009-", "Song for Uryes -2010-"];
 var p_index=0;
 var p_total=2;
 var picList = ['./img/picBG03.jpg', './img/worksBG.jpg'];
