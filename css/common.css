@@ -45,7 +45,13 @@ nav {
 	z-index: 2;
 	background: #000000;
 }
-
+#navbar {
+	position: relative;
+	width: 80%;
+	height: 100%;
+	padding-left: 10%;
+	//padding-top: 1.4rem;
+}
 #navbar > li {
 	display: inline-block;
 	vertical-align: middle;
@@ -68,8 +74,9 @@ nav {
 	fill: transparent;
 	width: 40px;
 	height: 40px;
-	margin-top: 8px;
-	margin-left: 3.5rem;
+	//margin-top: 8px ;
+	//margin-left: 3.5rem;
+	margin: 8px 20px;
 }
 .visible_checked {
 	display: none;
@@ -94,18 +101,20 @@ nav {
 	position: fixed;
 	top: 62px;
 	left: 0;
+	padding: 8px 20px;
 	width: 100%;
 	height: 100%;
 	min-height: 500px;
 	background: rgba(55,55,55,.9);
 	z-index: 10;
 }
-#xs_navbar ul {
+#xs_navbar > ul {
 	list-style-type: none;
 	font-size: 2rem;
 	margin-top: 3rem;
 	color: #ffffff;
 	font-weight: bold;
+	padding-inline-start: 0;
 }
 #xs_navbar li {
 	margin-top: 3rem;
