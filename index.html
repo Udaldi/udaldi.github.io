@@ -43,7 +43,7 @@
 					</nav>
 					
 					<!-- PRELUDIO -->
-					<div id="top" class="setAnchor"></div>
+					<!-- div id="top" class="setAnchor"></div>
 					<div class="img-responsive name_bg"></div>
 					<div class="contentSpace">
 						<div class="chapterName">Hello<br />World<br /><br /></div>
@@ -52,6 +52,24 @@
 							<div class="p2">Welcome to my virtual space.</div>
 						</div>
 					</div>
+					</div-->
+					<div class="monitor_effect">
+					<video id="myVideo" autoplay muted loop >
+						<source src="mainBg2cmp.mp4" type="video/mp4">
+					</video>
+					</div>
+					
+					<div class="monitor_effect">
+					<div class="contentSpace">
+						<div class="chapterName">&ensp;<br />&ensp;<br /><br /></div>
+						<div class="typewriter white_text">
+							<div class="p1">Hi everyone. This is Udaldi.</div><br />
+							<div class="p2">Welcome to my virtual space.</div>
+						</div>
+						<!-- div class="chapterName readable cream_text">Works<br /><br /></div>
+						<div id="clickMe"><a href="works.html"><svg><use xlink:href="#clickme"></use></svg></a></div -->
+					</div>
+				</div>
 				</div><!--top_bg-->
 				<div id="goDown"><a href="#about"><svg><use xlink:href="#godown"></use></svg></a></div>
 			</div><!--top_frame-->
@@ -59,7 +77,9 @@
 			<!-- ABOUT -->
 			<div class="top_frame">
 				<div id="about" class="setAnchor"></div>
+				
 				<div class="about_bg">
+				
 					<div class="flex_container">
 						<div id="go_prev"><svg><use xlink:href="#goprev"></use></svg></div> <!-- prev -->
 						<div id="go_next"><svg><use xlink:href="#gonext"></use></svg></div> <!-- next -->
@@ -182,17 +202,31 @@
 						</div>
 					</div><!-- flex_container -->
 				</div><!--top_bg-->
+				
 				<div id="goDown"><a href="#works"><svg><use xlink:href="#godown"></use></svg></a></div>
 			</div><!--top_frame-->
 			
 			<!-- WORKS -->
 			<div class="top_frame">
 				<div id="works" class="setAnchor"></div>
-				<div id="work_bg">
-					<div class="contentSpace">
-						<div class="chapterName readable cream_text">Works<br /><br /></div>
-						<div id="clickMe"><a href="works.html"><svg><use xlink:href="#clickme"></use></svg></a></div>
+				<!--div class="img-responsive"-->
+					<div class="monitor_effect">
+					<video id="myVideo" autoplay muted loop >
+						<source src="mainBg2cmp.mp4" type="video/mp4">
+					</video>
 					</div>
+				<!--/div-->
+				<div class="monitor_effect">
+					<div class="contentSpace">
+						<div class="chapterName">Hello<br />World<br /><br /></div>
+						<div class="typewriter white_text">
+							<div class="p1">Hi everyone. This is Udaldi.</div><br />
+							<div class="p2">Welcome to my virtual space.</div>
+						</div>
+						<!-- div class="chapterName readable cream_text">Works<br /><br /></div>
+						<div id="clickMe"><a href="works.html"><svg><use xlink:href="#clickme"></use></svg></a></div -->
+					</div>
+				</div>
 				</div><!--work_bg-->
 				
 				<!--div id="goDown"><a href="#store"><svg><use xlink:href="#godown"></use></svg></a></div -->
@@ -230,7 +264,7 @@
 				<p class="copyright gray_text">Copyright &copy; 2019 Udaldi. All Rights Reserved.</p>
 			</footer>
 		</div><!--wrapper-->
-		
+		<script>document.getElementById("myVideo").playbackRate = .4;</script>
 		<script type="text/javascript" src="./js/jquery.min.js"></script>
 		<script type="text/javascript" src="./js/common.js"></script>
 		
