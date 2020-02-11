@@ -1,0 +1,116 @@
+@charset "UTF-8";
+.top_frame {
+	background: #ffffff;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.top_bg {
+	position: relative;
+	background: #cc1111;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	overflow: hidden;
+}
+header {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+}
+.name_bg {
+	position: absolute;
+	background-image: url("../img/original/about02.png");
+	//background-image: url("../img/original/about_typing.png");
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: auto 200%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%; 
+	padding: 0;
+	overflow: hidden;
+}
+#myVideo {
+	width: auto;
+	height: 100%;
+	float: right;
+	overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+
+}
+@media (min-width: 768px) {
+	.name_bg {
+		animation: initlocation 2s 1s ease-in-out forwards;
+		overflow: hidden;
+	}
+}
+@keyframes initlocation { 
+	0% { 
+		background-size: auto 200%;
+		background-position: 50% 0%;
+	}
+	100% { 
+		background-size: auto 100%;
+		background-position: 100% 0%;
+	}
+}
+
+/* typewriter effect */
+.typewriter {
+	max-width: 35rem;
+	width: 35rem;
+}
+.typewriter .p1,
+.typewriter .p2 {
+	position: relative;
+	overflow: hidden;
+	border-right: .10em solid transparent;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .10em;
+	font-family: courier new, courier;
+	font-size: 1.8rem;
+	float: left;
+	text-shadow: #000 1px 0 10px;
+}
+.typewriter .p1 {
+	display: block;
+	animation: 
+		typing 2.5s steps(28, end),
+		blink-caret .5s step-end 4;
+	animation-delay: 0;
+}
+.typewriter .p2 {
+	opacity: 0;
+	display: block;
+	animation: 
+		typing 2.5s steps(28, end),
+		blink-caret .75s step-end infinite;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+}
+/* The typing effect */
+@keyframes typing {
+	from { width: 0; opacity: 1;}
+	to { width: 100%; opacity: 1;}
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: yellow; }
+	50% { border-color: transparent; }
+}
+
+/* Navigation symbols color */
+#xs_nav_label svg,
+#xs_navbar svg,
+.pagetop svg,
+#xs_navbar svg {
+	stroke: yellow;
+}
