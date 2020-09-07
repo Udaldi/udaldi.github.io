@@ -1,13 +1,8 @@
 @charset "UTF-8";
-.top_frame {
-	background: #ffffff;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-}
 .top_bg {
 	position: relative;
 	background: #cc1111;
+	//background: #d9a5b3;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
@@ -20,20 +15,66 @@ header {
 	top: 50%;
 	left: 20px;
 }
+.me_crow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	//bottom: -50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	//overflow: hidden;
+	opacity: 0;
+	animation: initlocationXs 2s 8s ease-in-out forwards;
+}
+.hand1,
+.hand2,
 .name_bg {
 	position: absolute;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+.name_bg {
+	//background-image: url("../img/original/nohand.png");
 	background-image: url("../img/original/about02.png");
-	//background-image: url("../img/original/about_typing.png");
-	background-position: 50% 0%;
+	//animation: initlocationXs 2s 8s ease-in-out forwards;
+}
+.hand1 {
+	opacity: 0;
+	background-image: url("../img/original/hand1.png");
+	animation: writing1 1s 8s ease-in-out infinite;
+}
+.hand2 {
+	opacity: 0;
+	background-image: url("../img/original/hand2.png");
+	animation: writing2 1s 8s ease-in-out infinite;
+}
+#light,
+#ideas {
+	position: absolute;
 	background-repeat: no-repeat;
 	background-size: auto 200%;
+	background-position: 50% 0%;
+	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
 	height: 100%; 
 	padding: 0;
 	overflow: hidden;
+	opacity: 0;
 }
+#ideas {
+	background-image: url("../img/light_xs.gif");
+	animation: hiddenShow 1s 10s ease-in-out forwards;
+}
+/* removed video */
 #myVideo {
 	width: auto;
 	height: 100%;
@@ -46,22 +87,123 @@ header {
 
 }
 @media (min-width: 768px) {
-	.name_bg {
-		animation: initlocation 2s 1s ease-in-out forwards;
+	.me_crow {
+		animation: initlocationLg 3s 8s ease-in-out forwards;
 		overflow: hidden;
 	}
-}
-@keyframes initlocation { 
-	0% { 
-		background-size: auto 200%;
-		background-position: 50% 0%;
+	.name_bg {
+	
 	}
-	100% { 
+	.hand1 {
+		animation: writing1 1s 3.5s ease-in-out infinite;
+	}
+	.hand2 {
+		animation: writing2 1s 3.5s ease-in-out infinite;
+	}
+	#light,
+	#ideas {
+		position: absolute;
+		background-repeat: no-repeat;
 		background-size: auto 100%;
 		background-position: 100% 0%;
 	}
+	/* #ideas {
+		display: none;
+		//animation: hiddenShow 1s 12s ease-in-out forwards;
+		//background-image: url("../img/thinking3.gif");
+	} */
+	#ideas {
+		animation: hiddenShow 1s 12s ease-in-out forwards;
+		background-image: url("../img/bulb.gif");
+	}
 }
-
+@keyframes hiddenShow {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes writing1 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes writing2 {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes initlocationXs { 
+	0% { 
+		opacity: 1;
+		/*background-size: auto 200%;
+		background-position: 50% -50%;*/
+		transform: scale(2);
+		bottom: -100%;
+	}
+	100% { 
+		opacity: 1;
+		/*background-size: auto 200%;
+		background-position: 50% 0%;*/
+		transform: scale(2);
+		bottom: -50%;
+	}
+}
+@keyframes initlocationLg {
+	0% { 
+		opacity: 1;
+		//background-size: auto 200%;
+		//background-position: 50% -50%;
+		transform: scale(2);
+		bottom: -100%;
+	}
+	35% { 
+		opacity: 1;
+		//background-size: auto 200%;
+		//background-position: 50% 0%;
+		transform: scale(2);
+		bottom: -50%;
+	}
+	65% {
+		opacity: 0;
+		//background-size: auto 200%;
+		//background-position: 50% 0%;
+		transform: scale(2);
+		//text-align: right;
+		bottom: -50%;
+	}
+	75% {
+		opacity: 0; 
+		//background-size: auto 100%;
+		//background-position: right 0% bottom -20%;
+		transform: scale(1);
+		transform: translateX(30%);
+		bottom: 0;
+	}
+	100% {
+		opacity: 1; 
+		//background-size: auto 100%;
+		//background-position: right 0% bottom -20%;
+		transform: scale(1);
+		transform: translateX(30%);
+		bottom: 0;
+		
+	}
+}
 /* typewriter effect */
 .typewriter {
 	max-width: 35rem;
@@ -81,11 +223,12 @@ header {
 	text-shadow: #000 1px 0 10px;
 }
 .typewriter .p1 {
+	opacity: 0;
 	display: block;
 	animation: 
-		typing 2.5s steps(28, end),
+		typing 2.5s steps(28, end) forwards,
 		blink-caret .5s step-end 4;
-	animation-delay: 0;
+	animation-delay: 1s;
 }
 .typewriter .p2 {
 	opacity: 0;
@@ -93,7 +236,7 @@ header {
 	animation: 
 		typing 2.5s steps(28, end),
 		blink-caret .75s step-end infinite;
-	animation-delay: 4s;
+	animation-delay: 4.5s;
 	animation-fill-mode: forwards;
 }
 /* The typing effect */
