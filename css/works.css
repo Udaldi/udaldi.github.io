@@ -1,11 +1,4 @@
 @charset "UTF-8";
-
-.top_frame {
-	background: #ffffff;
-	height: 100%;
-	width: 100%;
-//	overflow: hidden;
-}
 #work_bg {
 	background-image: url("../img/worksBG.jpg");
 	background-position: center;
@@ -108,6 +101,7 @@
 }
 .workTypewriter {
 	margin-bottom: 100px;
+	margin-left: 4px;
 }
 .workTypewriter #captureText,
 .workTypewriter #picCapText {
@@ -115,7 +109,7 @@
 	overflow: hidden;
 	border-right: .10em solid transparent;
 	white-space: nowrap;
-	margin: 0 auto;
+	//margin: 0 auto;
 	letter-spacing: .10em;
 	font-family: courier new, courier;
 	font-size: 1.2rem;
@@ -126,5 +120,5 @@
 }
 .workTypewriter #captureText.type,
 .workTypewriter #picCapText.type {
-	width: 35rem;;
+	width: 35rem;
 }
