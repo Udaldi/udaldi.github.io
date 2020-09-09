@@ -75,7 +75,7 @@ function ideaLight() {
 	});
 }
 
-/*
+
 document.getElementById('go_prev').addEventListener('touchstart', go_prev);
 document.getElementById('go_prev').addEventListener('click', go_prev);
 
@@ -131,7 +131,7 @@ function go_prev(event) {
 		current = 1;
 		document.getElementById('go_prev').style.opacity=0;
 	}
-}*/
+}
 /*
 function alternateWorks() {
 	w_index = w_index + 1;
