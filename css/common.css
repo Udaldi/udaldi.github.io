@@ -327,7 +327,7 @@ nav {
 }
 
 /* Got to the Top Page */
-.pagetop {
+#page_top {
 	position: fixed;
 	height: 40px;
 	width: 100%;
@@ -337,13 +337,13 @@ nav {
 	z-index: 2;
 	display: none;
 }
-.pagetop svg {
+#page_top svg {
 	fill: transparent;
 	stroke: white;
 	width: 60px;
 	height: 40px;
 }
-.pagetop svg:hover {
+#page_top svg:hover {
 	stroke: white;
 }
 /* footer */
@@ -385,7 +385,7 @@ footer {
 #navbar > li svg,
 #xs_nav_label svg,
 #xs_navbar svg,
-.pagetop svg,
+#page_top svg,
 #xs_navbar svg {
 	stroke: yellow;
 }
