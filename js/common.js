@@ -10,7 +10,7 @@ var well=$("#well");
 var dot1=$("#dot1");
 var dot2=$("#dot2");
 var dot3=$("#dot3");
-var pagetop = $('.pagetop');
+var pagetop = $("#page_top");
 var ideas=$("#ideas");
 var light=$("#light");
 
@@ -39,6 +39,9 @@ $(document).ready(function() {
 			var target = $(href == "#" || href == "" ? 'html' : href);
 			var position = target.offset().top;
 			$('body,html').animate({scrollTop:position}, velocidad, 'swing');
+			if (href == "#about") {
+				reset_about();
+			}
 			return false;
 		});
 	});
@@ -81,6 +84,14 @@ document.getElementById('go_prev').addEventListener('click', go_prev);
 
 document.getElementById('go_next').addEventListener('touchstart', go_next);
 document.getElementById('go_next').addEventListener('click', go_next);
+
+function reset_about(event) {
+	current=1;
+	next=1;
+	document.getElementById('item1').scrollIntoView();
+	document.getElementById('go_prev').style.opacity=0;
+	document.getElementById('go_next').style.opacity=1;
+}
 
 function go_next(event) {
 	event.preventDefault();
