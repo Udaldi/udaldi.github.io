@@ -36,8 +36,7 @@ a {
 	height: 100%;
 	width: 100%;
 	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 .top_frame {
 	position: relative;
@@ -66,9 +65,7 @@ a {
 	background-position: left top;
 	background-repeat: repeat;
 	width: 100%;
-	height: 100%; 
-	padding: 0;
-	overflow: hidden;
+	height: 100%;
 }
 .growingDots {
 	position: absolute;
@@ -187,13 +184,19 @@ nav {
 	top: 100px;
 }
 .contentSpaceHalf,
-.contentSpace {
-	padding: 100px 20px 0px;
+.contentSpaceTop {
+	margin: 100px 20px;
 	height: 100%;
-	//width: 100%;
+
 }
 .ignoreContentSpace {
 	margin: -100px -20px 0px;
+}
+.contentSpace {
+	position: relative;
+	width: 90%;
+	height: 100%;
+	margin: 100px auto;
 }
 @media (min-width: 768px) {
 	.half_frame {
@@ -205,7 +208,7 @@ nav {
 		overflow: hidden;
 		display: inline-block;
 	}
-	.contentSpace {
+	.contentSpaceTop {
 		padding-top: 13%;
 		padding-left: 10%;
 		width: 80%;
@@ -234,6 +237,9 @@ nav {
 		width: 100%;
 		height: 100%;
 		float: left;
+	}
+	.contentSpace {
+		width: 80%;
 	}
 }
 .rightAlign {
@@ -348,8 +354,8 @@ nav {
 }
 /* footer */
 footer {
-	background: #ffffff;
-	height: 100px;
+	background: #000;
+	height: 62px;
 	width: 100%;
 	max-width: 1200px;
 	cursor: url("../img/cursor2.png") 12 12, auto;
@@ -358,7 +364,8 @@ footer {
 	text-align: center;
 	font-family: arial;
 	font-size: x-small;
-	margin: 1.5rem;
+	line-height: 62px;
+	color: #fff;
 }
 
 /* Responsive Design */

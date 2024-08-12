@@ -3,9 +3,7 @@
 .about_bg {
 	position: relative;
 	background: #e0cda7;
-	//background: #1868ae;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
@@ -22,8 +20,8 @@
 	width: 100%;
 	height: auto; 
 	padding: 0;
-	overflow: hidden;
 }
+
 #babble {
 	position: relative;
 	font-family: Palatino,"Palatino Linotype";
@@ -140,6 +138,9 @@
 	font-size: 1.4rem;
 	color: #444444;
 }
+.interview a {
+	color: #c11;
+}
 @media (min-width: 768px) {
 	.flex_item {
 		width: 50%;
@@ -158,5 +159,8 @@
 	}
 	#go_next {
 		margin-right: 20px;
+	}
+	.interview {
+		font-size: 2rem;
 	}
 }

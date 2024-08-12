@@ -3,8 +3,7 @@
 	position: relative;
 	background: #cc1111;
 	//background: #d9a5b3;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	width: 100%;
 	height: 100%;
 	padding: 0;
