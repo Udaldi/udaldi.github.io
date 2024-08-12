@@ -5,7 +5,7 @@
 	background: #e0cda7;
 	margin: 0 auto;
 	width: 100%;
-	min-height: 100%;
+	//min-height: 100%;
 	overflow: hidden;
 }
 .interview_bg {
@@ -138,6 +138,24 @@
 }
 .interview a {
 	color: #c11;
+}
+.skills {
+	margin: 30px auto;
+}
+.interview dl {
+	display: grid;
+	grid-template-columns: max-content auto;
+	align-items: center;
+}
+.interview dl dt {
+	grid-column-start: 1;
+}
+.interview dl dd {
+	grid-column-start: 2;
+}
+.interview dl dt img {
+	width: 40px;
+	height: auto;
 }
 @media (min-width: 768px) {
 	.flex_item {
