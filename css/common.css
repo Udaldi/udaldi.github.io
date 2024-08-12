@@ -195,7 +195,6 @@ nav {
 .contentSpace {
 	position: relative;
 	width: 90%;
-	height: 100%;
 	margin: 100px auto;
 }
 @media (min-width: 768px) {
