@@ -3,16 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Creator of graphic novels, websites and sustainable life style. ">
+		<meta name="description" content="Udaldi's official portfolio website">
 		<meta name="author" content="Udaldi">
 		<link rel="icon" type="image/png" sizes="64x64" href="./img/logo.png">
 		<title>Udaldi, the curious crow</title>
+		<link rel="stylesheet" href="./css/reset.css">
 		<link rel="stylesheet" href="./css/normalize.css">
 		<link rel="stylesheet" href="./css/gridsystem.css">
 		<link rel="stylesheet" href="./css/common.css">
 		<link rel="stylesheet" href="./css/prelude.css">
 		<link rel="stylesheet" href="./css/about.css">
-		<link rel="stylesheet" href="./css/works.css">
+		<link rel="stylesheet" href="./css/work.css">
 		<link rel="stylesheet" href="./css/contact.css">
 	</head>
 <!-- Google tag (gtag.js) -->
@@ -38,16 +39,16 @@
 						<ul>
 							<li><a href="#top">Prelude</a></li>
 							<li><a href="#about">About</a></li>
-							<li><a href="#works">Works</a></li>
+							<li><a href="#work">Work</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div><!-- xs_navbar -->
 				</div><!-- xs_layout -->
-				<div class="md_layout white_text">
-					<ul id="navbar"><br />
+				<div id="navbar" class="md_layout white_text">
+					<ul>
 						<li><a href="#top">Prelude</a></li>
 						<li><a href="#about">About</a></li>
-						<li><a href="#works">Works</a></li>
+						<li><a href="#work">Work</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div><!-- md_layout -->
@@ -60,10 +61,10 @@
 				<div id="light"></div>
 				<div class="monitor_effect">
 					<div class="contentSpace">
-						<div class="chapterName"><span class="white_text">Hello</span><br />
-							World</div><br /><br /><br />
+						<div class="chapterName"><span class="white_text">Hello</span><br>
+							World</div>
 						<div class="typewriter white_text">
-							<div class="p1">Hi everyone. This is Udaldi.</div><br />
+							<div class="p1">Hi everyone. This is Udaldi.</div>
 							<div class="p2">Welcome to my virtual space.</div>
 						</div>
 					</div>
@@ -84,7 +85,7 @@
 				<div id="about" class="setAnchor"></div>
 				<div class="contentSpace">
 					<div class="col-xs-12 col-sm-6">
-						<div class="chapterName red_text">About<br>Me<br><br></div>
+						<div class="chapterName red_text">About<br>Me</div>
 						<table id="babble" border="0" cellspacing="0" cellpadding="0" width="100%" >
 							<tbody align="right">
 								<tr>
@@ -151,15 +152,31 @@
 						</div>
 					</div>
 				</div>
-				<div id="goDown"><a href="#works"><svg><use xlink:href="#godown"></use></svg></a></div>
+				<div id="goDown"><a href="#work"><svg><use xlink:href="#godown"></use></svg></a></div>
 			</div><!--about_bg-->
 			
-			<!-- WORKS -->
+			<!-- WORK -->
 			<div class="work_bg">
-				<div id="works" class="setAnchor"></div>
+				<div id="work" class="setAnchor"></div>
 				<div class="contentSpace">
-					<div class="chapterName readable cream_text">Works<br><br></div>
-					<div id="clickMe"><a href="works.html"><svg><use xlink:href="#clickme"></use></svg></a></div>
+					<div class="chapterName cream_text">Work</div>
+				</div>
+				<div class="workType01 col-xs-12 col-sm-6 col-md-3">
+					<p class="workTypeTitle">Packaging Design</p>
+					<img src="" alt="packaging">
+					<a href="work/packaging.html"><div class="go2workpage"></div></a>
+				</div>
+				<div class="workType02 col-xs-12 col-sm-6 col-md-3">
+					<img src="" alt="packaging">
+					<a href="work/print.html"><div class="go2workpage"></div></a>
+				</div>
+				<div class="workType03 col-xs-12 col-sm-6 col-md-3">
+					<img src="" alt="packaging">
+					<a href="work/ads.html"><div class="go2workpage"></div></a>
+				</div>
+				<div class="workType04 col-xs-12 col-sm-6 col-md-3">
+					<img src="" alt="packaging">
+					<a href="work/illustration.html"><div class="go2workpage"></div></a>
 				</div>
 				<div id="goDown"><a href="#contact"><svg><use xlink:href="#godown"></use></svg></a></div>
 			</div><!--work_bg-->
