@@ -1,0 +1,453 @@
+@charset "UTF-8";
+
+.work_bg {
+	position: relative;
+	background-image: url("../img/worksBG.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #000;
+	margin: 0 auto;
+	width: 100%;
+	//min-height: 100%;
+	z-index: 1;
+	overflow: hidden;
+}
+.workType01,
+.workType02,
+.workType03,
+.workType04 {
+	position: relative;
+	height: 300px;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	//border: 2px solid #ddd;
+	text-align: center;
+}
+.workType01 {
+	background-color: #ddd;
+}
+.workType02 {
+	background-color: #e0bcb0;
+}
+.workType03 {
+	background-color: #9fd4b5;
+}
+.workType04 {
+	background-color: #98dfd6;
+}
+.workTypeTitle {
+	font-family: Helvetica, Arial, san-serif;
+	color: #fff;
+	font-size: 24px;
+	padding: 20px 0;
+}
+.go2workpage {
+	position: absolute;
+	bottom: 20px;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #fff;
+	color: #444;
+	font-size: 16px;
+	text-align: center;
+	border: 5px solid #ddd;
+}
+.go2workpage::before {
+	content: "Check >>";
+}
+#clickMe {
+	text-align: center;
+	padding-top: 10%;
+	animation: blinker 7s linear infinite;
+}
+#clickMe svg {
+	fill: transparent;
+	stroke: #e0cda7;
+	width: 180px;
+	height: 180px;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Packaging */
+.top_frame {
+	position: relative;
+	background: #ddd;
+	width: 100%;
+	max-width: 1200px;
+	min-height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.chapterWork {
+	font-family: Helvetica, Arial;
+	font-size: 24px;
+	line-height: 20px;
+	margin: 30px 0;
+	font-weight: bold;
+}
+.chapterImg {
+	position: relative;
+	background-color: #fff;
+	max-height: 200px;
+	width: 90%;
+	margin: 10px auto;
+	border: 2px solid yellow;
+	padding: 10px;
+}
+.chapterImg img {
+	height: 100%;
+	max-height: 200px;
+	width: auto;
+	max-width: 100%;
+}
+
+article {
+	width: 100%;
+	margin: 20px 0 70px;
+}
+.cafe {
+	background-color: #faf5cf;
+}
+.sweets {
+	background-color: #efcbc5;
+}
+.cafe section .chapterNumber {
+	position: absolute;
+	top: -50px;
+	left: -30px;
+	margin-top: 0;
+	font-family: impact, san-serif;
+	font-size: 100px;
+	color: #163552;
+	/* -webkit-text-stroke: 3px black;
+	-moz-text-stroke: 3px black; */
+}
+.sweets section .chapterNumber {
+	position: absolute;
+	top: -50px;
+	left: -30px;
+	margin-top: 0;
+	font-family: impact, san-serif;
+	font-size: 100px;
+	color: #322048;
+	/* -webkit-text-stroke: 3px black;
+	-moz-text-stroke: 3px black; */
+}
+.cafe section {
+	position: relative;
+	width: 90%;
+	background-color: #fff;
+	padding: 5px;
+	margin: 0 auto;
+	text-align: center;
+}
+.cafe .mockup {
+	width: 90%;
+	margin: 0 auto;
+}
+.cafe section dt {
+	border-bottom: 2px solid #a0d1a4;
+	padding: 50px 0 10px;
+}
+.cafe section dt img {
+	height: 90px;
+}
+.keys section,
+.sweets section {
+	position: relative;
+	width: 90%;
+	background-color: #fff;
+	padding: 5px;
+	margin: 0 auto;
+	text-align: center;
+}
+.keys .mockup,
+.sweets .mockup {
+	width: 90%;
+	margin: 0 auto;
+}
+.sweets section dt {
+	border-bottom: 2px solid #ca0f44;
+	padding: 10px 0;
+}
+.sweets section dt img {
+	height: 130px;
+}
+section dd {
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 20px;
+	text-align: left;
+}
+
+.go2Page {
+	position: absolute;
+	background-color: #fff;
+	bottom: 20px;
+	right: -30px;
+	padding: 20px;
+	border: 1px solid #000;
+}
+.textWork {
+	position: relative;
+	font-family: Helvetica, Arial;
+	font-size: 16px;
+	line-height: 16px;
+	column-count: 1;
+	width: 90%;
+	margin: 0 auto;
+}
+.explanation {
+	font-family: Helvetica, Arial;
+	font-size: 16px;
+	line-height: 16px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* PRINT */
+.print_frame {
+	position: relative;
+	background: #e0bcb0;
+	width: 100%;
+	max-width: 1200px;
+	min-height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.cards {
+	background-color: #ddd;
+}
+.cards section {
+	position: relative;
+	width: 90%;
+	background-color: #fff;
+	padding: 5px;
+	margin: 10px auto;
+	text-align: center;
+}
+.cards section .chapterNumber {
+	position: absolute;
+	top: -50px;
+	left: -30px;
+	margin-top: 0;
+	font-family: impact, san-serif;
+	font-size: 100px;
+	color: #163552;
+}
+.cards section dt {
+	border-bottom: 2px solid yellow;
+	padding: 50px 0 10px;
+	font-family: Helvetica, Arial, san-serif;
+	font-size: 30px;
+	font-weight: bold;
+}
+.flyerImg {
+	width: 90%;
+	margin: 10px auto 50px;
+	font-size: 14px;
+	text-align: right;
+}
+.flyerImg img {
+	padding-bottom: 3px;
+}
+/* Advertising */
+.ads_frame {
+	position: relative;
+	background: #9fd4b5;
+	width: 100%;
+	max-width: 1200px;
+	min-height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ads {
+	background-color: #eee;
+}
+.ads section .chapterNumber {
+	position: absolute;
+	top: -50px;
+	left: -30px;
+	margin-top: 0;
+	font-family: impact, san-serif;
+	font-size: 100px;
+	color: #163552;
+}
+.ads section {
+	position: relative;
+	width: 90%;
+	background-color: #fff;
+	padding: 5px;
+	margin: 0 auto;
+	text-align: center;
+}
+.ads .mockup {
+	width: 90%;
+	margin: 0 auto;
+}
+.keys section dt,
+.ads section dt {
+	border-bottom: 2px solid #a0d1a4;
+	padding: 60px 0 10px;
+	font-family: Helvetica, Arial, san-serif;
+	font-size: 30px;
+	font-weight: bold;
+}
+.ads section dt img {
+	height: 90px;
+}
+.keys section .chapterNumber {
+	position: absolute;
+	top: -50px;
+	left: -30px;
+	margin-top: 0;
+	font-family: impact, san-serif;
+	font-size: 100px;
+	color: #e61673;
+}
+.keys {
+	background-color: #eee;
+}
+.keys section dt {
+	border-bottom: 2px solid #b9d300;
+	padding: 30px 0 10px;
+}
+@media (min-width: 768px) {
+	article {
+		margin-bottom: 100px;
+	}
+	.ads section,
+	.cafe section {
+		width: 40%;
+		padding: 5px;
+		margin: 120px 10px 30px;
+		text-align: center;
+		float: left;
+	}
+	.cafe .mockup {
+		width: 55%;
+		float: right;
+		margin-top: 150px;
+	}
+	.sweets section {
+		width: 35%;
+		padding: 5px;
+		margin: 150px 10px 30px;
+		text-align: center;
+		float: right;
+	}
+	.sweets .mockup {
+		width: 60%;
+		float: left;
+		margin-top: 200px;
+	}
+	.ads section dt,
+	.cafe section dt {
+		border-bottom: 3px solid #a0d1a4;
+		padding: 80px 0 10px;
+	}
+	.sweets section dt {
+		border-bottom: 3px solid #ca0f44;
+		padding: 10px 0;
+	}
+	.cafe section dt img {
+		height: 100px;
+	}
+	.sweets section dt img {
+		height: 150px;
+	}
+	section dd {
+		font-size: 14px;
+		line-height: 1.5;
+		padding: 20px;
+		text-align: left;
+	}
+	.ads section .chapterNumber,
+	.cafe section .chapterNumber {
+		top: -120px;
+		left: -50px;
+		font-size: 200px;
+		/* -webkit-text-stroke: 3px black;
+		-moz-text-stroke: 3px black; */
+	}
+	.keys section .chapterNumber,
+	.sweets section .chapterNumber {
+		top: -120px;
+		left: -150px;
+		margin-top: 0;
+		font-size: 200px;
+	}
+	.cards section {
+		width: 90%;
+		padding: 5px;
+		margin: 120px auto 10px;
+		text-align: center;
+	}
+	.cards {
+		padding-top: 10px;
+	}
+	.cards section .chapterNumber {
+		top: -120px;
+		left: -50px;
+		font-size: 200px;
+	}
+	.ads .mockup{
+		width: 55%;
+		float: right;
+		margin-top: 100px;
+	}
+	.keys section {
+		width: 40%;
+		padding: 5px;
+		margin: 150px 10px 30px;
+		text-align: center;
+		float: right;
+	}
+	.keys section dt {
+		padding-top: 80px;
+	}
+	.keys .mockup {
+		width: 50%;
+		float: left;
+		margin-top: 150px;
+	}
+	.workType01,
+	.workType02,
+	.workType03,
+	.workType04 {
+		height: 400px;
+	}
+	.chapterImg {
+		width: 70%;
+		max-height: 300px;
+	}
+	.chapterImg img {
+		max-height: 300px;
+	}
+	.textWork {
+		column-count: 2;
+		width: 80%;
+		-webkit-column-gap: 4rem;
+		-moz-column-gap: 4rem;
+		column-gap: 4rem;
+	}
+	.explanation {
+		width: 80%;
+	}
+	.chapterWork {
+		font-size: 34px;
+		line-height: 26px;
+		margin: 50px 0;
+	}
+}
+

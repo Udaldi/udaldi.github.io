@@ -24,7 +24,7 @@
 
 #babble {
 	position: relative;
-	font-family: Palatino,"Palatino Linotype";
+	font-family: Georgia, serif;
 	font-size: 3rem;
 	color: #444444;
 	margin-top: -20px;
@@ -94,7 +94,7 @@
 	cursor: url("../img/cursor4.png") 12 12, auto;
 }
 .question {
-	font-family: Times New Roman, Times;
+	font-family: Georgia, serif;
 	font-weight: bold;
 	font-size: 16px;
 	color: #cc1111;
@@ -132,9 +132,12 @@
 	margin: 100px 20px 10px;
 }
 .interview {
-	font-family: Palatino,"Palatino Linotype";
-	font-size: 1.4rem;
+	font-family: Arial, Verdana;
+	font-size: 16px;
 	color: #444444;
+}
+.interview p {
+	padding-bottom: 20px;
 }
 .interview a {
 	color: #c11;
@@ -142,18 +145,19 @@
 .skills {
 	margin: 30px auto;
 }
-.interview dl {
+.skills dl {
 	display: grid;
 	grid-template-columns: max-content auto;
 	align-items: center;
 }
-.interview dl dt {
+.skills dl dt {
 	grid-column-start: 1;
+	margin-right: 20px;
 }
-.interview dl dd {
+.skills dl dd {
 	grid-column-start: 2;
 }
-.interview dl dt img {
+.skills dl dt img {
 	width: 40px;
 	height: auto;
 }
@@ -177,6 +181,6 @@
 		margin-right: 20px;
 	}
 	.interview {
-		font-size: 2rem;
+		font-size: 18px;
 	}
 }
