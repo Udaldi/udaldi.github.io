@@ -3,13 +3,11 @@
 var max_width_xs=767;
 var pagetop = $("#page_top");
 var w_index=0;
-var w_total=5;
-var graphList = ['./img/song4uryes-3.png', './img/corvus2013.jpg', './img/corvus2013-2.jpg', './img/corvus2013-3.jpg', './img/song4uryes.png'];
+var graphList = ['../img/song4uryes-3.png', '../img/corvus2013.jpg', '../img/corvus2013-2.jpg', '../img/corvus2013-3.jpg', '../img/song4uryes.png'];
 var graphCapList = ["Song for Uryes -2010-", "Corvus2013 -2009-", "Corvus2013 -2009-", "Corvus2013 -2009-", "Song for Uryes -2010-"];
 var p_index=0;
-var p_total=4;
-var picList = ['./img/worksBG2.jpg', './img/worksBG.jpg', './img/picBG03.jpg', './img/worksBG3.jpg'];
-var picCapList = ["-2019-", "-2019-", "-2019-", "-2019-"];
+var picList = ['../img/work/eating-disorder.jpg', '../img/work/spoonfed-reality.jpg', '../img/work/gaza.jpg'];
+var picCapList = ["Eating Disorder (2024)", "Spoon-fed Reality (2024)", "Gaza (2024)"];
 
 $(document).ready(function() {
 		
@@ -53,11 +51,11 @@ function alternateWorks1() {
 function alternateWorks() {
 	w_index = w_index + 1;
 	
-	if(w_index >= w_total) {
+	if(w_index >= graphList.length) {
 		w_index = 0;
 	}
 	
-	document.getElementById('graphicNovel_bg').style.backgroundImage = "url(" + graphList[w_index] +  ")";
+	document.getElementById('graphicNovelImg').style.backgroundImage = "url(" + graphList[w_index] +  ")";
 	document.getElementById('captureText').innerHTML = graphCapList[w_index];
 	$('#captureText').toggleClass('type');
 	
@@ -77,11 +75,11 @@ function alternatePics1() {
 function alternatePics() {
 	p_index = p_index + 1;
 	
-	if(p_index >= p_total) {
+	if(p_index >= picList.length) {
 		p_index = 0;
 	}
 	
-	document.getElementById('photo_bg').style.backgroundImage = "url(" + picList[p_index] +  ")";
+	document.getElementById('vectorImg').style.backgroundImage = "url(" + picList[p_index] +  ")";
 	document.getElementById('picCapText').innerHTML = picCapList[p_index];
 	$('#picCapText').toggleClass('type');
 	
