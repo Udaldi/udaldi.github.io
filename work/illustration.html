@@ -3,13 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="I want to make website">
-		<link rel="icon" type="image/png" sizes="64x64" href="./img/logo.png">
-		<title>Udaldi - work</title>
-		<link rel="stylesheet" href="./css/normalize.css">
-		<link rel="stylesheet" href="./css/gridsystem.css">
-		<link rel="stylesheet" href="./css/common.css">
-		<link rel="stylesheet" href="./css/work.css">
+		<meta name="description" content="Udaldi's official portfolio website">
+		<link rel="icon" type="image/png" sizes="64x64" href="../img/logo.png">
+		<title>Udaldi | Work</title>
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../css/gridsystem.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/work.css">
 	</head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TXZQX8R31"></script>
@@ -20,7 +21,6 @@
 
   gtag('config', 'G-7TXZQX8R31');
 </script>
-
 	<body>
 		<div class="wrapper">
 			<nav>
@@ -32,62 +32,46 @@
 					</label>
 					<div id="xs_navbar">
 						<ul>
-							<li><a href="index.html#work"><svg><use xlink:href="#goprev"></use></svg></a></li>
-							<li><a href="#packaging">Packaging</a></li>
-							<li><a href="#print">Print</a></li>
-							<li><a href="#ads">Advertising</a></li>
-							<li><a href="#illustration">Illustration</a></li>
+							<li><a href="../index.html">&lt;&lt; Home</a></li>
+							<li><a href="packaging.html">Packaging</a></li>
+							<li><a href="print.html">Print</a></li>
+							<li><a href="ads.html">Advertising</a></li>
+							<li><a href="#">Illustration</a></li>
 						</ul>
 					</div><!-- xs_navbar -->
 				</div><!-- xs_layout -->
-				<div class="md_layout white_text">
-					<ul id="navbar">
-						<li><a href="index.html#work"><svg><use xlink:href="#goprev"></use></svg></a></li>
-						<li><a href="#packaging">Packaging</a></li>
-						<li><a href="#print">Print</a></li>
-						<li><a href="#ads">Advertising</a></li>
-						<li><a href="#illustration">Illustration</a></li>
+				<div id="navbar" class="md_layout white_text">
+					<ul>
+						<li><a href="../index.html">&lt;&lt; Home</a></li>
+						<li><a href="packaging.html">Packaging</a></li>
+						<li><a href="print.html">Print</a></li>
+						<li><a href="ads.html">Advertising</a></li>
+						<li><a href="#">Illustration</a></li>
 					</ul>
 				</div><!-- md_layout -->
 			</nav>
-			<div class="top_frame">
-				<div id="packaging" class="setAnchor"></div>
+			<div class="illustration_frame">
 				<div class="contentSpace">
-					<div class="chapterWork">Packaging<br>Design</div>
-					<div class="chapterImg">
-						<img src="img/work/package2.jpg" alt="packaging">
-						<a href="work/packaging.html"><div class="go2Page">See more >></div></a>
-					</div>
+					<div class="chapterName">I<span class="white_text">llustra</span>tion</div>
+					<article class="novel">
+						<section>
+							<h1 class="chapterNumber">01. Graphic<br>Novel</h1>
+							<div id="graphicNovelImg"></div>
+							<div class="workTypewriter black_text">
+								<p id="captureText"></p>
+							</div>
+						</section>
+					</article>
 					
-					<div id="print" class="setAnchor"></div>
-					<div class="chapterWork rightAlign">Print<br>Design</div>
-					<div class="chapterImg">
-						<img src="img/work/flyer2.jpg" alt="print">
-						<a href="work/print.html"><div class="go2Page">See more >></div></a>
-					</div>
-					<div class="textWork">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					
-					<div id="ads" class="setAnchor"></div>
-					<div class="chapterWork">Advertising<br>Design</div>
-					<div class="chapterImg">
-						<img src="img/work/cardshasami.jpg" alt="cardsImg">
-						<a href="work/ads.html"><div class="go2Page">See more >></div></a>
-					</div>
-					<div class="textWork">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					
-					<div id="illustration" class="setAnchor"></div>
-					<div class="chapterWork rightAlign">Illustration</div>
-					<div class="workTypewriter black_text">
-						<div id="photo_bg"></div>
-						<p id="picCapText"></p>
-					</div>
-					<div class="textWork">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
+					<article class="vector">
+						<section>
+							<h1 class="chapterNumber">02. Vector<br>Illustration</h1>
+							<div id="vectorImg"></div>
+							<div class="workTypewriter black_text">
+								<p id="picCapText"></p>
+							</div>
+						</section>
+					</article>
 				</div><!--contentSpace-->
 			</div><!--top_frame-->
 			
@@ -99,9 +83,8 @@
 			</footer>
 		</div><!--wrapper-->
 		
-		
-		<!--script type="text/javascript" src="./js/jquery.min.js"></script>
-		<script type="text/javascript" src="./js/works.js"></script-->
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/works.js"></script>
 		
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
 			<symbol id="menu">
@@ -113,28 +96,11 @@
 				<line x1="5" x2="35" y1="5" y2="35" stroke-width="2"/>
 				<line x1="5" x2="35" y1="35" y2="5" stroke-width="2"/>
 			</symbol>
-			<symbol id="godown">
-				<line x1="2" x2="20" y1="5" y2="25" stroke-width="2"/>
-				<line x1="20" x2="38" y1="25" y2="5" stroke-width="2"/>
-			</symbol>
-			<symbol id="goprev">
-				<line x1="5" x2="25" y1="20" y2="2" stroke-width="2"/>
-				<line x1="5" x2="25" y1="20" y2="38" stroke-width="2"/>
-			</symbol>
-			<symbol id="gonext">
-				<line x1="5" x2="25" y1="2" y2="20" stroke-width="2"/>
-				<line x1="25" x2="5" y1="20" y2="38" stroke-width="2"/>
-			</symbol>
 			<symbol id="pagetop">
 				<line x1="2" x2="20" y1="30" y2="10" stroke-width="2"/>
 				<line x1="20" x2="38" y1="10" y2="30" stroke-width="2"/>
 				<line x1="2" x2="20" y1="20" y2="0" stroke-width="2"/>
 				<line x1="20" x2="38" y1="0" y2="20" stroke-width="2"/>
-			</symbol>
-			<symbol id="clickme">
-				<circle cx="90" cy="90" r="20" stroke-width="10" stroke-opacity="0.9"/>
-				<circle cx="90" cy="90" r="40" stroke-width="10" stroke-opacity="0.7"/>
-				<circle cx="90" cy="90" r="80" stroke-width="5" stroke-opacity="0.4"/ >
 			</symbol>
 		</svg>
 	</body>
