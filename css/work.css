@@ -2,46 +2,84 @@
 
 .work_bg {
 	position: relative;
-	background-image: url("../img/worksBG.jpg");
+	/*background-image: url("../img/worksBG.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #000;
-	margin: 0 auto;
+	background-size: cover; */
+	background-color: #333;
 	width: 100%;
-	//min-height: 100%;
 	z-index: 1;
 	overflow: hidden;
+}
+.contentSpaceWork {
+	position: relative;
+	width: 90%;
+	margin: 100px auto 10px;
+}
+.contentSpaceWork .title {
+	width: 100%;
+}
+.working_crow {
+	position: relative;
+	background-image: url("../img/work/work-bg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 300px;
+}
+.working_crow img {
+	position: absolute;
+	height: 300px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.work_bg ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+.work_bg ul li {
+	flex: 1;
+	overflow: hidden;
+	background-color: #000;
+	flex-basis: 50%;
+	height: 300px;
 }
 .workType01,
 .workType02,
 .workType03,
 .workType04 {
 	position: relative;
-	height: 300px;
-	box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-	//border: 2px solid #ddd;
-	text-align: center;
+	margin: 10px auto;
+	background-color: #000;
+    overflow: hidden;
+	/*-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; */
 }
-.workType01 {
-	background-color: #ddd;
+
+.workType01 img,
+.workType02 img,
+.workType03 img,
+.workType04 img{
+	opacity: 0.8;
+    transition: 1s ease-in-out;
 }
-.workType02 {
-	background-color: #e0bcb0;
-}
-.workType03 {
-	background-color: #9fd4b5;
-}
-.workType04 {
-	background-color: #98dfd6;
+.workType01:hover img,
+.workType02:hover img,
+.workType03:hover img,
+.workType04:hover img{
+	transform: scale(1.1);
+	opacity: 0.4;
 }
 .workTypeTitle {
+	position: absolute;
+	top: 20px;
+	left: 20px;
 	font-family: Helvetica, Arial, san-serif;
 	color: #fff;
 	font-size: 24px;
-	padding: 20px 0;
 }
 .go2workpage {
 	position: absolute;
@@ -56,7 +94,7 @@
 	color: #444;
 	font-size: 16px;
 	text-align: center;
-	border: 5px solid #ddd;
+	border: 5px solid yellow;
 }
 .go2workpage::before {
 	content: "Check >>";
@@ -397,8 +435,33 @@ section dd {
 	width: 35rem;
 }
 @media (min-width: 768px) {
+	.contentSpaceWork .title {
+		width: 50%;
+		float: left;
+	}
+	.working_crow {
+		width: 50%;
+		float: left;
+		height: 400px;
+	}
+	.working_crow img {
+		height: 400px;
+	}
+	.work_bg ul li {
+		flex-basis: 25%;
+		height: 350px;
+	}
+	.workType01,
+	.workType02,
+	.workType03,
+	.workType04 {
+		width: 90%;
+	}
 	article {
 		margin-bottom: 100px;
+	}
+	.flex-col {
+		flex-basis: 100%;
 	}
 	.ads section,
 	.cafe section {
