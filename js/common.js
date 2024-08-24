@@ -13,7 +13,9 @@ var dot3=$("#dot3");
 var pagetop = $("#page_top");
 var ideas=$("#ideas");
 var light=$("#light");
-
+let index = 0;
+var pcLight = ['img/work/work-bg-light1.png', 'img/work/work-bg-light2.png'];
+const imgLight = document.querySelector('.working_crow img');
 
 $(document).ready(function() {
 		
@@ -39,15 +41,16 @@ $(document).ready(function() {
 			var target = $(href == "#" || href == "" ? 'html' : href);
 			var position = target.offset().top;
 			$('body,html').animate({scrollTop:position}, velocidad, 'swing');
-			if (href == "#about") {
+			/*if (href == "#about") {
 				reset_about();
-			}
+			}*/
 			return false;
 		});
 	});
 	
 	thinking();
 	shillyshally();
+	setInterval(workingCrowLight, 2000);
 	// alternateWorks();
 })
 
@@ -77,8 +80,12 @@ function ideaLight() {
 		ideas.fadeOut(4500, thinking);
 	});
 }
-
-
+function workingCrowLight() {
+	imgLight.src = pcLight[index];
+	index == 1 ? index = 0 : index++;
+	
+}
+/**
 document.getElementById('go_prev').addEventListener('touchstart', go_prev);
 document.getElementById('go_prev').addEventListener('click', go_prev);
 
